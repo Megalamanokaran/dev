@@ -1,22 +1,12 @@
+package com.example;
 
 public class unittest {
-
-    public int add(int a, int b) {
-        return a + b;
+    public void printEvenNumbers() {
+        System.out.println("numbers: 2 4 6 8 10");
     }
 
-    public int subtract(int a, int b) {
-        return a - b;
+    public static void main(String[] args) {
+        unittest main = new unittest();
+        main.printEvenNumbers();
     }
-
-    public int multiply(int a, int b) {
-        return a * b;
-    }
-
-    public int divide(int a, int b) {
-        if (b == 0) {
-            throw new ArithmeticException("Cannot divide by zero");
-        }
-        return a / b;
-}
 }
